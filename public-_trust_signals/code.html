@@ -33,10 +33,32 @@
   </style>
   </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
-<div class="flex h-screen flex-col">
-<header class="flex items-center justify-center border-b border-slate-200/10 p-4">
-<h1 class="text-lg font-bold text-slate-900 dark:text-white">SEO Plugin</h1>
-</header>
+<header class="bg-background-light/80 dark:bg-background-dark/80 sticky top-0 z-10 backdrop-blur-sm">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a class="text-xl font-extrabold text-slate-900 dark:text-white" href="../index.html">
+        <span class="text-primary">SEO</span>Boost
+      </a>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="../public-_features_page/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Features</a>
+        <a href="../public-_pricing_page/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Pricing</a>
+        <a href="../public-_case_studies/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Case Studies</a>
+        <a href="../public-_seo_guides_blog/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Blog</a>
+      </nav>
+      <div class="hidden md:flex items-center space-x-4">
+        <a href="../login_screen/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Login</a>
+        <a href="../public-_sign-up_form/code.html">
+          <button class="h-10 rounded-lg bg-primary px-6 text-base font-bold text-white shadow-md transition-transform hover:scale-105">Sign Up</button>
+        </a>
+      </div>
+      <button class="md:hidden rounded-lg p-2 text-slate-700 dark:text-slate-300">
+        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
 <main class="flex-1 overflow-y-auto">
 <div class="p-4 space-y-8">
 <section>
@@ -88,6 +110,11 @@
 </div>
 </div>
 </section>
+<section class="text-center">
+    <a href="../public-_sign-up_form/code.html">
+        <button class="h-12 rounded-lg bg-primary px-8 text-lg font-bold text-white shadow-md transition-transform hover:scale-105">Start Your Free Trial</button>
+    </a>
+</section>
 <section>
 <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 px-2">Used by Leading Brands</h2>
 <div class="grid grid-cols-3 gap-4">
@@ -127,26 +154,11 @@
 </section>
 </div>
 </main>
-<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200/10 shadow-t-lg sticky bottom-0">
-<nav class="flex justify-around items-center px-4 py-2">
-<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">home</span>
-<span class="text-xs font-medium">Home</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">search</span>
-<span class="text-xs font-medium">Analyze</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">show_chart</span>
-<span class="text-xs font-medium">Track</span>
-</a>
-<a class="flex flex-col items-center gap-1 text-primary" href="#">
-<span class="material-symbols-outlined">settings</span>
-<span class="text-xs font-medium">Settings</span>
-</a>
-</nav>
-</footer>
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800/50 mt-12">
+    <div class="container mx-auto p-6 text-center text-slate-500 dark:text-slate-400">
+      <p>© 2024 SEOBoost. All rights reserved.</p>
+    </div>
+  </footer>
 </div>
 
 </body></html>
