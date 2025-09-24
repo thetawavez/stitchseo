@@ -1,129 +1,105 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Stitch Design</title>
-<link crossorigin="" href="https-//fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https-//fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https-//fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#1173d4",
-              "background-light": "#f6f7f8",
-              "background-dark": "#101922",
-            },
-            fontFamily: {
-              display: ["Newsreader"],
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px"
-            },
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - SEOBoost</title>
+  <link href="https-//fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https-//fonts.gstatic.com" rel="preconnect"/>
+  <link href="https-//fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
           },
         },
-      };
-    </script>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
+      },
     }
-  </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-<div class="relative flex h-auto min-h-screen w-full flex-col justify-between group/design-root overflow-x-hidden">
-<div class="flex-grow">
-<header class="bg-background-light/80 dark:bg-background-dark/80 sticky top-0 z-10 backdrop-blur-sm">
-  <div class="container mx-auto flex items-center justify-between p-4">
-    <a class="text-xl font-extrabold text-slate-900 dark:text-white" href="../index.html">
-      <span class="text-primary">SEO</span>Boost
-    </a>
-    <nav class="hidden md:flex items-center space-x-6">
-      <a href="../public-_features_page/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Features</a>
-      <a href="../public-_pricing_page/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Pricing</a>
-      <a href="../public-_case_studies/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Case Studies</a>
-      <a href="../public-_seo_guides_blog/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Blog</a>
-    </nav>
-    <div class="hidden md:flex items-center space-x-4">
-      <a href="../login_screen/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Login</a>
-      <a href="../public-_sign-up_form/code.html">
-        <button class="h-10 rounded-lg bg-primary px-6 text-base font-bold text-white shadow-md transition-transform hover:scale-105">Sign Up</button>
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <header class="bg-background-light/80 dark:bg-background-dark/80 sticky top-0 z-10 backdrop-blur-sm">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a class="text-xl font-extrabold text-slate-900 dark:text-white" href="../index.html">
+        <span class="text-primary">SEO</span>Boost
       </a>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="../public-_features_page/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Features</a>
+        <a href="../public-_pricing_page/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Pricing</a>
+        <a href="../public-_case_studies/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Case Studies</a>
+        <a href="./code.html" class="text-primary font-bold">Blog</a>
+      </nav>
+      <div class="hidden md:flex items-center space-x-4">
+        <a href="../login_screen/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Login</a>
+        <a href="../public-_sign-up_form/code.html">
+          <button class="h-10 rounded-lg bg-primary px-6 text-base font-bold text-white shadow-md transition-transform hover:scale-105">Sign Up</button>
+        </a>
+      </div>
+      <button class="md:hidden rounded-lg p-2 text-slate-700 dark:text-slate-300">
+        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
-    <button class="md:hidden rounded-lg p-2 text-slate-700 dark:text-slate-300">
-      <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <line x1="4" x2="20" y1="12" y2="12"></line>
-        <line x1="4" x2="20" y1="6" y2="6"></line>
-        <line x1="4" x2="20" y1="18" y2="18"></line>
-      </svg>
-    </button>
-  </div>
-</header>
-<main class="p-4 space-y-6">
-<h2 class="text-2xl font-bold text-gray-900 dark:text-white">Popular Guides</h2>
-<div class="space-y-4">
-<div class="flex items-start gap-4 rounded-lg bg-white dark:bg-gray-900/50 p-4 shadow-sm">
-<div class="flex-1 space-y-1">
-<p class="text-sm font-medium text-primary">SEO</p>
-<p class="text-lg font-bold text-gray-900 dark:text-white">How to Fix Slow Page Speed</p>
-<p class="text-gray-600 dark:text-gray-400">Learn how to optimize your website's speed for better user experience and search engine rankings.</p>
-</div>
-<div class="w-24 h-24 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSWHfSL7Pg8RQVeW0BNMziVh1lBGa2beTWtfQKprcp62Z19GWL9T5HjZa5eqtABsrULwqDxG5KN6LZR4PnWYYnNyWFR1deVNc65aSSbHZgY2NAloTfKLZl0dNy0U39ptdLkAtDK30oi3DB1vVcbTYsvb4fBpPE0qj6Bmm8eVCnfzIHCh0iE9F_vKQ9T08prDmMf7ORQPMlippR291zRdNH1Xp4RD8cPoKbFR0siQsUkxkQVXL0eGF_WhS89O1jcOGTG1jru7pLAw");'></div>
-</div>
-<div class="flex items-start gap-4 rounded-lg bg-white dark:bg-gray-900/50 p-4 shadow-sm">
-<div class="flex-1 space-y-1">
-<p class="text-sm font-medium text-primary">SEO</p>
-<p class="text-lg font-bold text-gray-900 dark:text-white">Keyword Research for Beginners</p>
-<p class="text-gray-600 dark:text-gray-400">Discover the best practices for finding and using keywords to drive targeted traffic to your site.</p>
-</div>
-<div class="w-24 h-24 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyRpkaCyzpHk6I6a3axBjOOEJBxCp_1Ouw0Wv8soijT8CeTDj8arZOXerpiva2BCskuoFHLW6___x-YZcOYUYRS9pUB72Nmv-TMooLSJClI9e7JBXFE25lpeCJoNDUAtpjnxTnUMoYU3PPBHm7k2MzyWIG_DYkc-L77p-Q_Cf1fJcy1UmWTAhffxtf5_NqjXTH0Y32QlX2yVwmymMoMkHHBdUJxMJPpY0SOg8YuiWllHB11s7of7Vd35mE3enm8uclWPodDMEuJg");'></div>
-</div>
-<div class="flex items-start gap-4 rounded-lg bg-white dark:bg-gray-900/50 p-4 shadow-sm">
-<div class="flex-1 space-y-1">
-<p class="text-sm font-medium text-primary">SEO</p>
-<p class="text-lg font-bold text-gray-900 dark:text-white">On-Page SEO Checklist</p>
-<p class="text-gray-600 dark:text-gray-400">Ensure your website is fully optimized with this comprehensive checklist for on-page SEO.</p>
-</div>
-<div class="w-24 h-24 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5hINdL-5CaMo47gRcK79ySi4YRE5MiHBDydi6SMOYUMP_7DD-3nQx4Izc7rQ2zIaoexg7Y9pRlMHhd5AQ-FOqks-jzU8go1J1NPQHWWcAMAKfPVU8XAbOKkLJmUQIoPdmpEpPX9fZkHLPoX_1hRG0RQxeV0aBxLpRKQIgocDzXv-fccVBpD_SxpQQrD5BjfOlnIdF-nfhZgJxqPDIGZPc1DZ6yq2r8H0yNMZAQm3Niy7lPOBjyi_CRwLfto3WlqyerkGqApI51A");'></div>
-</div>
-<div class="flex items-start gap-4 rounded-lg bg-white dark:bg-gray-900/50 p-4 shadow-sm">
-<div class="flex-1 space-y-1">
-<p class="text-sm font-medium text-primary">SEO</p>
-<p class="text-lg font-bold text-gray-900 dark:text-white">Link Building Strategies</p>
-<p class="text-gray-600 dark:text-gray-400">Explore effective strategies for building high-quality backlinks to improve your site's authority.</p>
-</div>
-<div class="w-24 h-24 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCa76_K7VGhj7YGr6Xx0dtFjwBTYQweGQx-UkTHos5AeXj5iCJ4DgHQ4i-P8zeOc6Rz90Z1krq1H3iVJdixUeO3e4sOK8V310l7IM6Ug94e6jpMyFI2U3hSYTClmMJ9fdCpGVe8KpEfkw0ae5UefjZe2VHTaCPrEOLNPJ7e-uTM5oBLcN3dbjHBdWrrxvwoxGKWTeA4KVXrcNHo3axk-rtEg39h5f2mat80QFz6nVqCb_Vtcxqno_DjshgeC65p-YndW6G3FLhxfA");'></div>
-</div>
-</div>
-</main>
-</div>
-<footer class="sticky bottom-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800">
-<nav class="flex justify-around py-2">
-<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
-<span class="material-symbols-outlined"> home </span>
-<span class="text-xs font-medium">Home</span>
-</a>
-<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
-<span class="material-symbols-outlined"> science </span>
-<span class="text-xs font-medium">Analyze</span>
-</a>
-<a class="flex flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
-<span class="material-symbols-outlined"> show_chart </span>
-<span class="text-xs font-medium">Track</span>
-</a>
-<a class="flex flex-col items-center justify-end gap-1 text-primary" href="#">
-<span class="material-symbols-outlined"> book </span>
-<span class="text-xs font-medium">Resources</span>
-</a>
-</nav>
-<div class="h-5 bg-background-light dark:bg-background-dark"></div>
-</footer>
-</div>
+  </header>
 
-</body></html>
+  <main class="container mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-extrabold text-slate-900 dark:text-white">SEO Guides & Blog</h1>
+      <p class="mt-2 text-lg text-slate-600 dark:text-slate-400">Learn how to improve your website's SEO with our expert guides and articles.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Blog Post 1 -->
+      <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Blog Post 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-sm font-semibold text-primary">SEO</p>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white mt-2">How to Fix Slow Page Speed</h2>
+          <p class="text-slate-600 dark:text-slate-400 mt-2">Learn how to optimize your website's speed for better user experience and search engine rankings.</p>
+          <a href="#" class="text-primary font-bold mt-4 inline-block">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Blog Post 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-sm font-semibold text-primary">SEO</p>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white mt-2">Keyword Research for Beginners</h2>
+          <p class="text-slate-600 dark:text-slate-400 mt-2">Discover the best practices for finding and using keywords to drive targeted traffic to your site.</p>
+          <a href="#" class="text-primary font-bold mt-4 inline-block">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Blog Post 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-sm font-semibold text-primary">SEO</p>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white mt-2">On-Page SEO Checklist</h2>
+          <p class="text-slate-600 dark:text-slate-400 mt-2">Ensure your website is fully optimized with this comprehensive checklist for on-page SEO.</p>
+          <a href="#" class="text-primary font-bold mt-4 inline-block">Read More</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800/50 mt-12">
+    <div class="container mx-auto p-6 text-center text-slate-500 dark:text-slate-400">
+      <p>© 2024 SEOBoost. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
