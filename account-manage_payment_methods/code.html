@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https-//fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https-//fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Inter"],
+            },
+            borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          },
+        },
+      };
+    </script>
+<link href="https-//fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Payment Methods</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex h-full min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-gray-200/50 dark:border-gray-700/50 bg-background-light/80 dark:bg-background-dark/80 p-4 backdrop-blur-sm">
+<button class="flex items-center justify-center rounded-full p-2 hover:bg-primary/10">
+<span class="material-symbols-outlined text-gray-900 dark:text-white"> arrow_back </span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white">Payment Methods</h1>
+<div class="w-10"></div>
+</header>
+<main class="flex-1 overflow-y-auto p-4">
+<section class="space-y-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Saved Payment Methods</h2>
+<div class="space-y-3 rounded-lg bg-white dark:bg-gray-800/50 p-4 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<img alt="Visa" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADTsYLWgYbvB2eqqwBcWVdejeZdncau7lDOKz0_5Pmu5HValYeKczLMlfXzBbnqsIm7NjZzm6ZMou6Pp00C6knHGPe_LpIj15SsJHYw7KoHMwOXfl8qQlMsogUb8cVdhR5i22ZD_G9zfwvWz4GfvrNt6scocNUpi9c3o0oXV5rGeMZw1jB3j9zFzc_jDtbdr2yc5IasVF0zJ5gLu-fn58p6cN-q13DFwH4JeymZhxwYacug2zwMXcUj5bBD68sw-YH5it5a6jFyA"/>
+<div>
+<p class="font-medium text-gray-900 dark:text-white">Visa ending in 4242</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Expires 08/2025</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary">Default</span>
+<button class="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+<span class="material-symbols-outlined"> delete </span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<img alt="Mastercard" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGGe8sOEll_oMmp3mHQE6Wq75lWeUsWduU1tSlAUmVzoq8ZO4ydhRaIGsYQJ4vzraSWFDVdEWHXT-xPaMxpsGGfZtrLabQZ5IEOMVJVGFTydHROREOhSMtRIAKvAtysXt4td8gSH8IU49uMjaTe88iUGDkEeLzTLwkr4mDydTbMg3nEmDOTQXzbVCVqc5wFBWsT1pbX-tu8Jn7LcBKcac59HPl9zawMzsi9n2dGu75XLoWdfnlvm2_B7Cfcf5FLc6aiq63tzC9Ng"/>
+<div>
+<p class="font-medium text-gray-900 dark:text-white">Mastercard ending in 1234</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Expires 05/2024</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-sm font-medium text-primary hover:underline">Set as default</button>
+<button class="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+<span class="material-symbols-outlined"> delete </span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Add New Payment Method</h2>
+<form class="mt-4 space-y-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="card-number">Card Number</label>
+<div class="mt-1">
+<input class="w-full rounded-lg border-gray-300 bg-gray-100 dark:border-gray-600 dark:bg-gray-700/50 p-3 text-gray-900 dark:text-white focus:border-primary focus:ring-primary" id="card-number" placeholder="•••• •••• •••• ••••" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="expiry-date">Expiry Date</label>
+<div class="mt-1">
+<input class="w-full rounded-lg border-gray-300 bg-gray-100 dark:border-gray-600 dark:bg-gray-700/50 p-3 text-gray-900 dark:text-white focus:border-primary focus:ring-primary" id="expiry-date" placeholder="MM/YY" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="cvc">CVC</label>
+<div class="mt-1">
+<input class="w-full rounded-lg border-gray-300 bg-gray-100 dark:border-gray-600 dark:bg-gray-700/50 p-3 text-gray-900 dark:text-white focus:border-primary focus:ring-primary" id="cvc" placeholder="•••" type="text"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="name-on-card">Name on Card</label>
+<div class="mt-1">
+<input class="w-full rounded-lg border-gray-300 bg-gray-100 dark:border-gray-600 dark:bg-gray-700/50 p-3 text-gray-900 dark:text-white focus:border-primary focus:ring-primary" id="name-on-card" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<button class="flex w-full items-center justify-center rounded-lg bg-primary px-4 py-3 text-base font-bold text-white shadow-sm hover:bg-primary/90" type="submit">
+              Add Payment Method
+            </button>
+</form>
+</section>
+</main>
+<nav class="sticky bottom-0 z-10 border-t border-gray-200/50 dark:border-gray-700/50 bg-background-light/80 dark:bg-background-dark/80 px-4 pt-2 pb-4 backdrop-blur-sm">
+<div class="flex justify-around">
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> dashboard </span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> description </span>
+<span class="text-xs font-medium">Pages</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined"> person </span>
+<span class="text-xs font-medium">Account</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined"> settings </span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Set New Password</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https-//fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https-//fonts.gstatic.com" rel="preconnect"/>
+<link href="https-//fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .password-strength-bar::-webkit-progress-bar {
+            background-color: #e5e7eb;}
+        .password-strength-bar::-webkit-progress-value {
+            background-color: #1173d4;
+        }
+        .password-strength-bar::-moz-progress-bar {
+            background-color: #1173d4;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="min-h-screen flex flex-col">
+<header class="flex items-center p-4">
+<button class="text-gray-800 dark:text-gray-200">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white pr-6">Reset Password</h1>
+</header>
+<main class="flex-grow p-4 space-y-6">
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="new-password">New Password</label>
+<div class="relative">
+<input class="form-input block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-primary focus:border-primary h-12 px-4" id="new-password" placeholder="Enter your new password" type="password"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="confirm-password">Confirm Password</label>
+<input class="form-input block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-primary focus:border-primary h-12 px-4" id="confirm-password" placeholder="Confirm your new password" type="password"/>
+</div>
+</div>
+<div class="space-y-2">
+<p class="text-sm font-medium text-gray-700 dark:text-gray-300">Password Strength</p>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 50%"></div>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Medium</p>
+</div>
+</main>
+<footer class="p-4">
+<button class="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark">
+                Set New Password
+            </button>
+</footer>
+</div>
+
+</body></html>

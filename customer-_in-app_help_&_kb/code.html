@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https-//fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https-//fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https-//fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-primary/20 bg-background-light/80 p-4 pb-3 backdrop-blur-sm dark:bg-background-dark/80 dark:border-primary/30">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-zinc-900 dark:text-white">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-zinc-900 dark:text-white pr-10">Help</h1>
+</header>
+<main class="p-4">
+<div class="relative mb-6">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-zinc-500 dark:text-zinc-400">search</span>
+<input class="w-full rounded-lg border-primary/30 bg-white/50 py-3 pl-10 pr-4 text-zinc-900 placeholder-zinc-500 focus:border-primary focus:ring-primary dark:border-primary/40 dark:bg-background-dark dark:text-white dark:placeholder-zinc-400" placeholder="Search for answers" type="text"/>
+</div>
+<section class="mb-8">
+<h2 class="mb-4 text-xl font-bold text-zinc-900 dark:text-white">Popular topics</h2>
+<div class="grid grid-cols-2 gap-4">
+<a class="flex flex-col items-center justify-center gap-3 rounded-xl border border-primary/20 bg-white p-4 text-center dark:border-primary/30 dark:bg-background-dark/50" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<h3 class="font-semibold text-zinc-900 dark:text-white">Getting started</h3>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 rounded-xl border border-primary/20 bg-white p-4 text-center dark:border-primary/30 dark:bg-background-dark/50" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<h3 class="font-semibold text-zinc-900 dark:text-white">SEO analysis</h3>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 rounded-xl border border-primary/20 bg-white p-4 text-center dark:border-primary/30 dark:bg-background-dark/50" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">settings</span>
+</div>
+<h3 class="font-semibold text-zinc-900 dark:text-white">Plugin settings</h3>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 rounded-xl border border-primary/20 bg-white p-4 text-center dark:border-primary/30 dark:bg-background-dark/50" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">build</span>
+</div>
+<h3 class="font-semibold text-zinc-900 dark:text-white">Troubleshooting</h3>
+</a>
+</div>
+</section>
+<section>
+<h2 class="mb-4 text-xl font-bold text-zinc-900 dark:text-white">FAQs</h2>
+<div class="space-y-2">
+<a class="flex items-center justify-between rounded-lg bg-white p-4 dark:bg-background-dark/50" href="#">
+<p class="text-zinc-900 dark:text-white">How to install the plugin?</p>
+<span class="material-symbols-outlined text-zinc-500 dark:text-zinc-400">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-white p-4 dark:bg-background-dark/50" href="#">
+<p class="text-zinc-900 dark:text-white">What are the best SEO practices?</p>
+<span class="material-symbols-outlined text-zinc-500 dark:text-zinc-400">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-white p-4 dark:bg-background-dark/50" href="#">
+<p class="text-zinc-900 dark:text-white">How to track my website's performance?</p>
+<span class="material-symbols-outlined text-zinc-500 dark:text-zinc-400">chevron_right</span>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-white p-4 dark:bg-background-dark/50" href="#">
+<p class="text-zinc-900 dark:text-white">What to do if the plugin is not working?</p>
+<span class="material-symbols-outlined text-zinc-500 dark:text-zinc-400">chevron_right</span>
+</a>
+</div>
+</section>
+<div class="py-6">
+<button class="w-full rounded-lg bg-primary/20 py-3.5 font-bold text-primary dark:bg-primary/30">
+                        Contact Support
+                    </button>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 border-t border-primary/20 bg-background-light/80 p-2 backdrop-blur-sm dark:border-primary/30 dark:bg-background-dark/80">
+<div class="flex justify-around">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-lg py-2 text-zinc-600 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-lg py-2 text-zinc-600 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">description</span>
+<p class="text-xs font-medium">Pages</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-lg py-2 text-zinc-600 dark:text-zinc-400" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<p class="text-xs font-medium">Account</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-lg bg-primary/10 py-2 text-primary dark:bg-primary/20" href="#">
+<span class="material-symbols-outlined">help</span>
+<p class="text-xs font-bold">Help</p>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>
