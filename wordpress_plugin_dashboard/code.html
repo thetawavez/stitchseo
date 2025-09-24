@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .progress-bar-container {
+        width: 100%;
+        background-color: #e0e0e0;
+        border-radius: 9999px;
+        height: 8px;
+    }
+    .dark .progress-bar-container {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .progress-bar {
+        height: 100%;
+        background-color: #1173d4;
+        border-radius: 9999px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800">
+<h1 class="text-lg font-bold text-gray-900 dark:text-white">Page Analysis</h1>
+<button class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+</svg>
+</button>
+</div>
+</header>
+<main class="flex-grow p-4 space-y-6">
+<section>
+<h2 class="text-base font-semibold text-gray-700 dark:text-gray-300 mb-2">SEO Score</h2>
+<div class="p-4 bg-white/5 dark:bg-black/10 rounded-lg">
+<div class="flex justify-between items-center mb-2">
+<span class="font-bold text-green-500">Good</span>
+<span class="text-sm font-medium text-gray-600 dark:text-gray-400">75/100</span>
+</div>
+<div class="progress-bar-container">
+<div class="progress-bar" style="width: 75%;"></div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-base font-semibold text-gray-700 dark:text-gray-300 mb-2">Focus Keyphrase</h2>
+<input class="form-input w-full rounded-lg border-gray-300 dark:border-gray-700 bg-background-light dark:bg-background-dark focus:border-primary focus:ring-primary focus:ring-opacity-50 placeholder-gray-400 dark:placeholder-gray-500" placeholder="Enter your keyphrase" type="text"/>
+</section>
+<section>
+<h2 class="text-base font-semibold text-gray-700 dark:text-gray-300 mb-4">Analysis</h2>
+<div class="space-y-3">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 size-8 flex items-center justify-center rounded-full bg-green-500/20 text-green-500">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Keyphrase in title</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Your focus keyphrase appears in the SEO title.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 size-8 flex items-center justify-center rounded-full bg-yellow-500/20 text-yellow-500">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M240,128a112,112,0,1,1-112-112A112,112,0,0,1,240,128Zm-24,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128ZM120,152V88a8,8,0,0,1,16,0v64a8,8,0,0,1-16,0Zm8,32a12,12,0,1,0-12-12A12,12,0,0,0,128,184Z"></path></svg>
+</div>
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Content length</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">The content is a bit short. Consider adding more text.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 size-8 flex items-center justify-center rounded-full bg-red-500/20 text-red-500">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,194.34,149.66,128l80-66.34a8,8,0,0,0-11.32-11.32L128,116.69,61.66,50.34a8,8,0,0,0-11.32,11.32L106.31,128,26.34,194.34a8,8,0,0,0,11.32,11.32L128,139.31l66.34,56.35a8,8,0,0,0,11.32,0,8,8,0,0,0,0-11.32ZM205.66,50.34a8,8,0,0,0-11.32,11.32L212.69,72Z" opacity="0"></path><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+</div>
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Keyphrase in meta description</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">The meta description is missing the focus keyphrase.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 size-8 flex items-center justify-center rounded-full bg-green-500/20 text-green-500">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Keyphrase density</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">The keyphrase was found 3 times. This is great!</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 size-8 flex items-center justify-center rounded-full bg-green-500/20 text-green-500">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</div>
+<div>
+<p class="font-medium text-gray-800 dark:text-gray-200">Image alt attributes</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">All images on this page have alt attributes.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="sticky bottom-0 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800">
+<button class="w-full h-12 px-6 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-colors duration-200">
+        Update Page
+      </button>
+</footer>
+</div>
+
+</body></html>

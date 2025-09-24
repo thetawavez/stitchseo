@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<title>Sign Up</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-screen min-h-screen w-full flex-col justify-between">
+<div class="flex-grow">
+<header class="flex items-center p-4">
+<button class="text-gray-600 dark:text-gray-400">
+<span class="material-symbols-outlined">
+              arrow_back
+              </span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white pr-8">Sign up</h1>
+</header>
+<main class="px-6 py-8">
+<form class="space-y-6">
+<div>
+<label class="sr-only" for="email">Email</label>
+<input class="form-input w-full rounded-lg border-2 border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 p-4 text-base placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:ring-primary" id="email" name="email" placeholder="Email" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="password">Password</label>
+<input class="form-input w-full rounded-lg border-2 border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 p-4 text-base placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:ring-primary" id="password" name="password" placeholder="Password" type="password"/>
+</div>
+<div>
+<label class="sr-only" for="confirm-password">Confirm Password</label>
+<input class="form-input w-full rounded-lg border-2 border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 p-4 text-base placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:ring-primary" id="confirm-password" name="confirm-password" placeholder="Confirm Password" type="password"/>
+</div>
+</form>
+</main>
+</div>
+<div class="p-6">
+<button class="w-full h-14 rounded-lg bg-primary text-white text-base font-bold flex items-center justify-center">
+          Sign up
+        </button>
+<p class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
+          Already have an account? <a class="font-medium text-primary hover:underline" href="#">Log in</a>
+</p>
+</div>
+</div>
+
+</body></html>
