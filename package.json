@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "python -m http.server $PORT"
+    "start": "python main.py"
   },
   "devDependencies": {
     "prettier": "^3.2.5"

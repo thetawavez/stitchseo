@@ -28,30 +28,7 @@
   </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display">
-  <header class="bg-background-light/80 dark:bg-background-dark/80 sticky top-0 z-10 backdrop-blur-sm">
-    <div class="container mx-auto flex items-center justify-between p-4">
-      <a class="text-xl font-extrabold text-slate-900 dark:text-white" href="./index.html">
-        <span class="text-primary">SEO</span>Boost
-      </a>
-      <nav class="hidden md:flex items-center space-x-6">
-        <a href="./public-_features_page/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Features</a>
-        <a href="./public-_pricing_page/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Pricing</a>
-        <a href="./public-_case_studies/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Case Studies</a>
-        <a href="./public-_seo_guides_blog/code.html" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Blog</a>
-      </nav>
-      <div class="hidden md:flex items-center space-x-4">
-        <button onclick="signIn(true)" class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary">Admin Login</button>
-        <button onclick="signIn(false)" class="h-10 rounded-lg bg-primary px-6 text-base font-bold text-white shadow-md transition-transform hover:scale-105">Customer Login</button>
-      </div>
-      <button class="md:hidden rounded-lg p-2 text-slate-700 dark:text-slate-300">
-        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-          <line x1="4" x2="20" y1="12" y2="12"></line>
-          <line x1="4" x2="20" y1="6" y2="6"></line>
-          <line x1="4" x2="20" y1="18" y2="18"></line>
-        </svg>
-      </button>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
 
   <main>
     <section class="relative bg-cover bg-center text-white py-24" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
@@ -108,12 +85,9 @@
     </section>
   </main>
 
-  <footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800/50">
-    <div class="container mx-auto p-6 text-center text-slate-500 dark:text-slate-400">
-      <p>© 2024 SEOBoost. All rights reserved.</p>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
   <script type="module" src="firebase.js"></script>
   <script type="module" src="login.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
